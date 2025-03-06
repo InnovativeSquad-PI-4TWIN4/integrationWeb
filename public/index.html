@@ -25,8 +25,13 @@
             <img src="logoemfo.jpg" alt="EMFO Logo" class="w-28 h-10 object-contain">
         </div>
         
-        <!-- Menu pour desktop -->
-        <ul class="hidden md:flex space-x-6 items-center flex-grow justify-center">
+        <!-- Bouton Menu Mobile -->
+        <button id="menu-button" class="md:hidden text-white text-2xl">
+            ☰
+        </button>
+
+        <!-- Menu pour desktop & mobile -->
+        <ul id="menu" class="hidden md:flex space-x-6 items-center flex-grow justify-center md:static absolute top-16 left-0 w-full bg-[#0A0A52] md:bg-transparent p-4 md:p-0 z-50">
             <li><a href="HomePage.html" class="hover:underline flex items-center"><i class="bi bi-house-door mr-2"></i>Accueil</a></li>
             <li><a href="AvisSite.html" class="hover:underline flex items-center"><i class="bi bi-cart mr-2"></i>Avis</a></li>
             <li><a href="Authenticitéproduit.html" class="hover:underline flex items-center"><i class="bi bi-tags mr-2"></i>Boutique</a></li>
@@ -34,23 +39,31 @@
             <li><a href="AvisProduit.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Profile</a></li>
             <li><a href="ListeBoutiques.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Localisation</a></li>
             <li><a href="FormulaireDétails.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Recommandations</a></li>
-    
-    
         </ul>
         
-        <!-- Barre de recherche -->
-        <div class="hidden md:flex items-center space-x-2">
-            <input type="text" placeholder="Recherche" class="p-1 w-52 rounded text-gray-900">
-            <button class="bg-white text-gray-900 px-3 py-1 rounded"><i class="bi bi-search"></i></button>
+        <!-- Profil + Menu Mobile -->
+        <div class="flex items-center space-x-4">
+            <!-- Icône de Profil -->
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                 alt="Profile"
+                 class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-white">
         </div>
-        
-        <!-- Bouton Déconnexion -->
-        <button class="bg-red-500 px-3 py-1 rounded text-sm">Déconnecter</button>
     </nav>
-    
+
+    <!-- Script pour gérer l'affichage du menu mobile -->
     <script>
-        document.getElementById('menu-button').addEventListener('click', function () {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
+        const menuButton = document.getElementById('menu-button');
+        const menu = document.getElementById('menu');
+
+        menuButton.addEventListener('click', function () {
+            menu.classList.toggle('hidden');
+        });
+
+        // Fermer le menu mobile si l'écran devient grand
+        window.addEventListener('resize', function () {
+            if (window.innerWidth >= 768) { // Dès que l'écran est grand
+                menu.classList.add('hidden'); // Cacher le menu mobile
+            }
         });
     </script>
     
