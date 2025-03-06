@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMFO - Boutique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .font-body { font-family: 'Roboto', sans-serif; }
+        .gradient-header {
+            background-color: #0A0A52;
+        }
+        .gradient-footer {
+            background-color: #0A0A52;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-body">
+    
+    <!-- Navbar -->
+    <nav class="gradient-header text-white p-4 flex justify-between items-center flex-wrap">
+        <div>
+            <img src="logoemfo.jpg" alt="EMFO Logo" class="w-28 h-10 object-contain">
+        </div>
+        
+        <!-- Menu pour desktop -->
+        <ul class="hidden md:flex space-x-6 items-center flex-grow justify-center">
+            <li><a href="HomePage.html" class="hover:underline flex items-center"><i class="bi bi-house-door mr-2"></i>Accueil</a></li>
+            <li><a href="#" class="hover:underline flex items-center"><i class="bi bi-cart mr-2"></i>Panier</a></li>
+            <li><a href="ListeNouveautés.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Nouveautés</a></li>
+            <li><a href="#" class="hover:underline flex items-center"><i class="bi bi-tags mr-2"></i>SOLDE</a></li>
+
+
+        </ul>
+        
+        <!-- Barre de recherche -->
+        <div class="hidden md:flex items-center space-x-2">
+            <input type="text" placeholder="Recherche" class="p-1 w-52 rounded text-gray-900">
+            <button class="bg-white text-gray-900 px-3 py-1 rounded"><i class="bi bi-search"></i></button>
+        </div>
+        
+        <!-- Bouton Déconnexion -->
+        <button class="bg-red-500 px-3 py-1 rounded text-sm">Déconnecter</button>
+    </nav>
+    
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+    
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-gray-800">Bienvenue dans la boutique EMFO</h1>
+    </main>
+
+    <!-- Footer -->
+    <footer class="gradient-footer text-white py-6 px-4 flex flex-col md:flex-row justify-between items-center text-center">
+        <div class="flex flex-col md:flex-row items-center w-full justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="logoemfo.jpg" alt="EMFO Logo" class="w-24 h-10 object-contain">
+                <div>
+                    <h2 class="text-lg font-bold">CONTACT</h2>
+                    <p><i class="bi bi-envelope mr-2"></i>EMFO@gmail.com</p>
+                    <p><i class="bi bi-telephone mr-2"></i>+216 70 100 300</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-lg font-bold">LIVRAISON</h2>
+                <p><i class="bi bi-truck mr-2"></i>Express 24H</p>
+                <p><i class="bi bi-box-seam mr-2"></i>Standard en 48H</p>
+            </div>
+            <div class="flex items-center">
+                <input type="text" placeholder="Newsletter" class="p-2 rounded text-gray-900 md:mr-2">
+                <button class="bg-blue-500 px-4 py-2 rounded">Envoyer</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
