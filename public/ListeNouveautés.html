@@ -68,12 +68,11 @@
     <!-- Menu pour desktop -->
     <ul class="hidden md:flex space-x-6 items-center flex-grow justify-center">
         <li><a href="HomePage.html" class="hover:underline flex items-center"><i class="bi bi-house-door mr-2"></i>Accueil</a></li>
-        <li><a href="AvisSite.html" class="hover:underline flex items-center"><i class="bi bi-cart mr-2"></i>Avis</a></li>
-        <li><a href="Authenticitéproduit.html" class="hover:underline flex items-center"><i class="bi bi-tags mr-2"></i>Boutique</a></li>
-        <li><a href="ListeNouveautés.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Nouveautés</a></li>
-        <li><a href="AvisProduit.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Profile</a></li>
-        <li><a href="ListeBoutiques.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Localisation</a></li>
-        <li><a href="FormulaireDétails.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Recommandations</a></li>
+            <li><a href="AvisSite.html" class="hover:underline flex items-center"><i class="bi bi-chat-left-text mr-2"></i>Avis</a></li>
+            <li><a href="ListeBoutiques.html" class="hover:underline flex items-center"><i class="bi bi-bag-check mr-2"></i>Boutique</a></li>
+            <li><a href="ListeNouveautés.html" class="hover:underline flex items-center"><i class="bi bi-stars mr-2"></i>Nouveautés</a></li>
+            <li><a  class="hover:underline flex items-center"><i class="bi bi-person-circle mr-2"></i>Profile</a></li>
+            <li><a href="FormulaireDétails.html" class="hover:underline flex items-center"><i class="bi bi-lightbulb mr-2"></i>Recommandations</a></li>
 
 
     </ul>
@@ -85,7 +84,20 @@
     </div>
     
     <!-- Bouton Déconnexion -->
-    <button class="bg-red-500 px-3 py-1 rounded text-sm">Déconnecter</button>
+<div style="margin-left: 20px;"> <!-- Ajoute un espacement de 20px à gauche -->
+    <button style="
+        border: 2px solid white;
+        padding: 10px 20px; /* Ajoute un padding de 10px en haut/bas et 20px à gauche/droite */
+        color: white;
+        background-color: transparent; /* Fond transparent */
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px; /* Coins arrondis */
+        transition: background-color 0.3s ease; /* Animation de transition */
+    ">
+        Déconnecter
+    </button>
+</div>
 </nav>
 
     
@@ -95,7 +107,7 @@
         
         <div class="product-card relative cursor-pointer overflow-hidden rounded-lg"
         onclick="window.location.href='DétailsArticles.html';">
-       <img src="chemise noire.jpg" alt="Chemise Noire" class="w-full h-full object-cover rounded-lg">
+       <img src="f667065d-5c24-4f5d-b74b-fe0e9efc78df.jpeg" alt="Chemise Noire" class="w-full h-full object-cover rounded-lg">
        <div class="absolute inset-0 flex flex-col justify-end p-4 bg-black bg-opacity-30">
            <h3 class="text-lg font-bold text-white">Chemise Noire</h3>
            <p class="text-sm text-gray-200">Une touche de modernité et d'élégance</p>
@@ -106,7 +118,7 @@
 
    <div class="product-card relative cursor-pointer overflow-hidden rounded-lg"
    onclick="window.location.href='DétailsArticles.html';">
-  <img src="vestebleu.jpg" alt="Chemise Noire" class="w-full h-full object-cover rounded-lg">
+  <img src="34a150dc-c0b7-4563-910a-3684b18fa0b3.jpeg" alt="Chemise Noire" class="w-full h-full object-cover rounded-lg">
   <div class="absolute inset-0 flex flex-col justify-end p-4 bg-black bg-opacity-30">
       <h3 class="text-lg font-bold text-white">Veste Bleu Sport Chic</h3>
       <p class="text-sm text-gray-200">Sport Chic</p>
@@ -116,41 +128,41 @@
 
 <div class="product-card relative cursor-pointer overflow-hidden rounded-lg"
 onclick="window.location.href='DétailsArticles.html';">
-<img src="vestebleu.jpg" alt="Chemise Noire" class="w-full h-full object-cover rounded-lg">
+<img src="2d47d73c-5067-4777-84ed-017bfb396ef3.jpeg" alt="Chemise Noire" class="w-full h-full object-cover rounded-lg">
 <div class="absolute inset-0 flex flex-col justify-end p-4 bg-black bg-opacity-30">
    <h3 class="text-lg font-bold text-white">Chemise Blanche</h3>
    <p class="text-sm text-gray-200">elle s adapte bien a un look professionnel</p>
+   <p class="text-blue-400 font-bold">75 DT</p>
+</div>
+</div>
+
+<div class="product-card relative cursor-pointer overflow-hidden rounded-lg"
+onclick="window.location.href='DétailsArticles.html';">
+<img src="44688082-cb36-4380-80e6-d41e542636fd.jpeg" alt="Chemise Noire" class="w-full h-full object-cover rounded-lg">
+<div class="absolute inset-0 flex flex-col justify-end p-4 bg-black bg-opacity-30">
+   <h3 class="text-lg font-bold text-white">Chemise Verte</h3>
+   <p class="text-sm text-gray-200">Ajouter Une Touche de modernité et d'élégance à votre tenu</p>
+   <p class="text-blue-400 font-bold">70 DT</p>
+</div>
+</div>
+
+<div class="product-card relative cursor-pointer overflow-hidden rounded-lg"
+onclick="window.location.href='DétailsArticles.html';">
+<img src="8a8a2b91-9e21-45bf-937f-caf393ee4065.jpeg" alt="Chemise Noire" class="w-full h-full object-cover rounded-lg">
+<div class="absolute inset-0 flex flex-col justify-end p-4 bg-black bg-opacity-30">
+   <h3 class="text-lg font-bold text-white">Veste Bleu Ciel Chic</h3>
+   <p class="text-sm text-gray-200">Ajouter Une Touche de modernité et d'élégance à votre tenu</p>
    <p class="text-blue-400 font-bold">110 DT</p>
 </div>
 </div>
 
 <div class="product-card relative cursor-pointer overflow-hidden rounded-lg"
 onclick="window.location.href='DétailsArticles.html';">
-<img src="vestebleu.jpg" alt="Chemise Noire" class="w-full h-full object-cover rounded-lg">
+<img src="f9f1c0eb-d110-4e63-98d9-41645b2f5794.jpeg" alt="Chemise Noire" class="w-full h-full object-cover rounded-lg">
 <div class="absolute inset-0 flex flex-col justify-end p-4 bg-black bg-opacity-30">
-   <h3 class="text-lg font-bold text-white">Veste Bleu Sport Chic</h3>
-   <p class="text-sm text-gray-200">Sport Chic</p>
-   <p class="text-blue-400 font-bold">110 DT</p>
-</div>
-</div>
-
-<div class="product-card relative cursor-pointer overflow-hidden rounded-lg"
-onclick="window.location.href='DétailsArticles.html';">
-<img src="vestebleu.jpg" alt="Chemise Noire" class="w-full h-full object-cover rounded-lg">
-<div class="absolute inset-0 flex flex-col justify-end p-4 bg-black bg-opacity-30">
-   <h3 class="text-lg font-bold text-white">Veste Bleu Sport Chic</h3>
-   <p class="text-sm text-gray-200">Sport Chic</p>
-   <p class="text-blue-400 font-bold">110 DT</p>
-</div>
-</div>
-
-<div class="product-card relative cursor-pointer overflow-hidden rounded-lg"
-onclick="window.location.href='DétailsArticles.html';">
-<img src="vestebleu.jpg" alt="Chemise Noire" class="w-full h-full object-cover rounded-lg">
-<div class="absolute inset-0 flex flex-col justify-end p-4 bg-black bg-opacity-30">
-   <h3 class="text-lg font-bold text-white">Veste Bleu Sport Chic</h3>
-   <p class="text-sm text-gray-200">Sport Chic</p>
-   <p class="text-blue-400 font-bold">110 DT</p>
+   <h3 class="text-lg font-bold text-white">Veste Gris Chic</h3>
+   <p class="text-sm text-gray-200">elle s adapte bien a un look professionnel</p>
+   <p class="text-blue-400 font-bold">95 DT</p>
 </div>
 </div>
 
