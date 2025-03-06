@@ -29,15 +29,28 @@
         <div>
             <img src="logoemfo.jpg" alt="EMFO Logo" class="w-28 h-10 object-contain">
         </div>
+        
+        <!-- Menu pour desktop -->
         <ul class="hidden md:flex space-x-6 items-center flex-grow justify-center">
             <li><a href="HomePage.html" class="hover:underline flex items-center"><i class="bi bi-house-door mr-2"></i>Accueil</a></li>
             <li><a href="AvisSite.html" class="hover:underline flex items-center"><i class="bi bi-cart mr-2"></i>Avis</a></li>
             <li><a href="Authenticitéproduit.html" class="hover:underline flex items-center"><i class="bi bi-tags mr-2"></i>Boutique</a></li>
             <li><a href="ListeNouveautés.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Nouveautés</a></li>
             <li><a href="AvisProduit.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Profile</a></li>
-            <li><a href="ListeBoutiques.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Paramétres</a></li>
+            <li><a href="ListeBoutiques.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Localisation</a></li>
+            <li><a href="FormulaireDétails.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Recommandations</a></li>
+    
+    
         </ul>
-        <button class="bg-red-500 px-4 py-2 rounded shadow-lg hover:bg-red-600">Déconnecter</button>
+        
+        <!-- Barre de recherche -->
+        <div class="hidden md:flex items-center space-x-2">
+            <input type="text" placeholder="Recherche" class="p-1 w-52 rounded text-gray-900">
+            <button class="bg-white text-gray-900 px-3 py-1 rounded"><i class="bi bi-search"></i></button>
+        </div>
+        
+        <!-- Bouton Déconnexion -->
+        <button class="bg-red-500 px-3 py-1 rounded text-sm">Déconnecter</button>
     </nav>
 
     <main class="container mx-auto px-4 py-8">
