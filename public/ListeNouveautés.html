@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listes des nouveautés</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+       
+        .font-body { font-family: 'Roboto', sans-serif; }
+        .gradient-header {
+            background-color: #0A0A52;
+        }
+        .gradient-footer {
+            background-color: #0A0A52;
+        }
+           .product-card {
+            background-color: #E3ECF3;
+            border-radius: 10px;
+            padding: 10px;
+            transition: transform 0.3s;
+            position: relative;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .info-icon {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 5px;
+            border-radius: 50%;
+        }
+        .cart-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 5px;
+            border-radius: 50%;
+        }
+        .details {
+            display: none;
+            position: absolute;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            top: 30px;
+            left: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .product-card:hover .details {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-body">
+    
+   <!-- Navbar -->
+   <nav class="gradient-header text-white p-4 flex justify-between items-center flex-wrap">
+    <div>
+        <img src="logoemfo.jpg" alt="EMFO Logo" class="w-28 h-10 object-contain">
+    </div>
+    
+    <!-- Menu pour desktop -->
+    <ul class="hidden md:flex space-x-6 items-center flex-grow justify-center">
+        <li><a href="#" class="hover:underline flex items-center"><i class="bi bi-house-door mr-2"></i>Accueil</a></li>
+        <li><a href="#" class="hover:underline flex items-center"><i class="bi bi-cart mr-2"></i>Panier</a></li>
+        <li><a href="ListeNouveautés.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Nouveautés</a></li>
+        <li><a href="#" class="hover:underline flex items-center"><i class="bi bi-tags mr-2"></i>SOLDE</a></li>
+
+
+    </ul>
+    
+    <!-- Barre de recherche -->
+    <div class="hidden md:flex items-center space-x-2">
+        <input type="text" placeholder="Recherche" class="p-1 w-52 rounded text-gray-900">
+        <button class="bg-white text-gray-900 px-3 py-1 rounded"><i class="bi bi-search"></i></button>
+    </div>
+    
+    <!-- Bouton Déconnexion -->
+    <button class="bg-red-500 px-3 py-1 rounded text-sm">Déconnecter</button>
+</nav>
+
+    
+<main class="container mx-auto px-4 py-6">
+    <h2 class="text-gray-600 text-sm">280 articles</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+        <div class="product-card relative">
+            <img src="chemise-noire.jpg" alt="Chemise Noire" class="w-full h-56 object-cover rounded">
+            <h3 class="text-lg font-bold mt-2">Chemise Noire</h3>
+            <p class="text-sm text-gray-600">Une touche de modernité et d'élégance</p>
+            <p class="text-blue-600 font-bold">65 DT</p>
+        </div>
+        <div class="product-card relative">
+            <img src="veste-bleu.jpg" alt="Veste Bleue" class="w-full h-56 object-cover rounded">
+            <h3 class="text-lg font-bold mt-2">Veste Bleu Sport Chic</h3>
+            <p class="text-sm text-gray-600">Sport et Chic</p>
+            <p class="text-blue-600 font-bold">110 DT</p>
+        </div>
+        <div class="product-card relative">
+            <img src="chemise-blanche.jpg" alt="Chemise Blanche" class="w-full h-56 object-cover rounded">
+            <h3 class="text-lg font-bold mt-2">Chemise Blanche</h3>
+            <p class="text-sm text-gray-600">Elle s'adapte bien à un look professionnel</p>
+            <p class="text-blue-600 font-bold">75 DT</p>
+        </div>
+        <div class="product-card relative">
+            <img src="chemise-verte.jpg" alt="Chemise Verte" class="w-full h-56 object-cover rounded">
+            <h3 class="text-lg font-bold mt-2">Chemise Verte</h3>
+            <p class="text-sm text-gray-600">Ajoutez une touche de modernité et d'élégance</p>
+            <p class="text-blue-600 font-bold">70 DT</p>
+        </div>
+        <div class="product-card relative">
+            <img src="veste-bleu-clair.jpg" alt="Veste Bleu Ciel" class="w-full h-56 object-cover rounded">
+            <h3 class="text-lg font-bold mt-2">Veste Bleu Ciel Chic</h3>
+            <p class="text-sm text-gray-600">Ajoutez une touche d'élégance à votre tenue</p>
+            <p class="text-blue-600 font-bold">110 DT</p>
+        </div>
+        <div class="product-card relative">
+            <img src="veste-gris.jpg" alt="Veste Gris Chic" class="w-full h-56 object-cover rounded">
+            <h3 class="text-lg font-bold mt-2">Veste Gris Chic</h3>
+            <p class="text-sm text-gray-600">Elle s'adapte bien à un look professionnel</p>
+            <p class="text-blue-600 font-bold">95 DT</p>
+        </div>
+    </div>
+</main>
+
+
+     <!-- Footer -->
+     <footer class="gradient-footer text-white py-6 px-4 flex flex-col md:flex-row justify-between items-center text-center">
+        <div class="flex flex-col md:flex-row items-center w-full justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="logoemfo.jpg" alt="EMFO Logo" class="w-24 h-10 object-contain">
+                <div>
+                    <h2 class="text-lg font-bold">CONTACT</h2>
+                    <p><i class="bi bi-envelope mr-2"></i>EMFO@gmail.com</p>
+                    <p><i class="bi bi-telephone mr-2"></i>+216 70 100 300</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-lg font-bold">LIVRAISON</h2>
+                <p><i class="bi bi-truck mr-2"></i>Express 24H</p>
+                <p><i class="bi bi-box-seam mr-2"></i>Standard en 48H</p>
+            </div>
+            <div class="flex items-center">
+                <input type="text" placeholder="Newsletter" class="p-2 rounded text-gray-900 md:mr-2">
+                <button class="bg-blue-500 px-4 py-2 rounded">Envoyer</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
