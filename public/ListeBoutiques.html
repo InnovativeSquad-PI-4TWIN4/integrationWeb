@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avis sur le Produit</title>
+    <title>Listes des Boutiques</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
@@ -15,11 +15,14 @@
         .gradient-footer {
             background-color: #0A0A52;
         }
-        .review-card {
-            background: white;
+        .shop-card {
+            background-color: #B0C4DE; /* Bleu clair */
             padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -42,47 +45,45 @@
     </nav>
 
     <main class="container mx-auto px-4 py-8">
-        <a href="#" class="text-lg font-bold">&larr; Avis sur le produit</a>
+        <a href="#" class="text-lg font-bold">&larr; Listes des Boutiques</a>
 
-        <div class="mt-6 flex flex-col md:flex-row items-start md:space-x-10">
-            <img src="chemise-blanche.jpg" alt="Chemise Blanche" class="w-72 rounded shadow-lg">
-            
-            <div class="flex-1">
-                <h1 class="text-3xl font-bold">Chemise Blanche Classique</h1>
-                <p class="text-gray-700 text-lg mt-2">Prix : <span class="font-bold">75 DT</span></p>
-                
-                <!-- Avis existants -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-                    <div class="review-card">
-                        <h3 class="font-bold">Excellent achat !</h3>
-                        <p class="text-sm text-gray-600">La chemise est de très bonne qualité, bien coupée et confortable. Parfait pour le bureau ou une occasion spéciale.</p>
-                        <p class="text-sm text-gray-500 mt-2"><i class="bi bi-person-circle"></i> Monji Manoubi - 12/08/2024</p>
-                    </div>
-                    <div class="review-card">
-                        <h3 class="font-bold">Bonne qualité, taille grand</h3>
-                        <p class="text-sm text-gray-600">Le tissu est agréable, mais la coupe est un peu large. Prendre une taille en dessous pour un ajustement parfait.</p>
-                        <p class="text-sm text-gray-500 mt-2"><i class="bi bi-person-circle"></i> Hamadi Bargaoui - 13/10/2024</p>
-                    </div>
+        <!-- Carte Google Maps -->
+        <div class="mt-6">
+            <iframe class="w-full h-64 rounded shadow-lg"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25614.37530829392!2d10.162689734192132!3d36.80649407557954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd34ca9df4d727%3A0x13fefce4c6b3c17f!2sTunis!5e0!3m2!1sen!2stn!4v1639820122829!5m2!1sen!2stn"
+                allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- Liste des boutiques -->
+        <div class="mt-6 space-y-4">
+            <div class="shop-card">
+                <img src="logoemfo.jpg" alt="Boutique EMFO" class="w-24 h-24 object-contain rounded">
+                <div class="flex-1">
+                    <h2 class="text-xl font-bold">AOUINA</h2>
+                    <p>Résidence Rania l'aouina la soukra <br> 2045 Ariana <br> Tunisia</p>
                 </div>
+                <i class="bi bi-geo-alt text-2xl text-gray-600"></i>
+            </div>
+
+            <div class="shop-card">
+                <img src="logoemfo.jpg" alt="Boutique EMFO" class="w-24 h-24 object-contain rounded">
+                <div class="flex-1">
+                    <h2 class="text-xl font-bold">SOUKRA</h2>
+                    <p>Résidence Rania l'aouina la soukra <br> 2045 Ariana <br> Tunisia</p>
+                </div>
+                <i class="bi bi-geo-alt text-2xl text-gray-600"></i>
+            </div>
+
+            <div class="shop-card">
+                <img src="logoemfo.jpg" alt="Boutique EMFO" class="w-24 h-24 object-contain rounded">
+                <div class="flex-1">
+                    <h2 class="text-xl font-bold">JENDOUBA</h2>
+                    <p>Résidence Rania l'aouina la soukra <br> 2045 Ariana <br> Tunisia</p>
+                </div>
+                <i class="bi bi-geo-alt text-2xl text-gray-600"></i>
             </div>
         </div>
 
-        <!-- Ajouter un avis -->
-        <h2 class="text-2xl font-bold mt-8">Donner Votre Avis</h2>
-        <div class="mt-4">
-            <div class="flex space-x-2">
-                <span class="text-lg">😀</span>
-                <span class="text-lg">😐</span>
-                <span class="text-lg">😞</span>
-                <span class="text-lg">😍</span>
-                <span class="text-lg">🤩</span>
-            </div>
-            <textarea class="mt-4 p-2 w-full md:w-1/2 border rounded" placeholder="Donner votre avis"></textarea>
-            <div class="mt-4">
-                <button class="bg-blue-500 px-4 py-2 text-white rounded hover:bg-blue-600">Confirmer</button>
-                <button class="bg-gray-300 px-4 py-2 rounded">Annuler</button>
-            </div>
-        </div>
     </main>
 
     <!-- Footer -->
