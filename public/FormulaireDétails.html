@@ -41,13 +41,12 @@
         <!-- Menu pour desktop -->
         <ul class="hidden md:flex space-x-6 items-center flex-grow justify-center">
             <li><a href="HomePage.html" class="hover:underline flex items-center"><i class="bi bi-house-door mr-2"></i>Accueil</a></li>
-            <li><a href="AvisSite.html" class="hover:underline flex items-center"><i class="bi bi-cart mr-2"></i>Avis</a></li>
-            <li><a href="Authenticitéproduit.html" class="hover:underline flex items-center"><i class="bi bi-tags mr-2"></i>Boutique</a></li>
-            <li><a href="ListeNouveautés.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Nouveautés</a></li>
-            <li><a href="AvisProduit.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Profile</a></li>
-            <li><a href="ListeBoutiques.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Localisation</a></li>
-            <li><a href="FormulaireDétails.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Recommandations</a></li>
-    
+            <li><a href="AvisSite.html" class="hover:underline flex items-center"><i class="bi bi-chat-left-text mr-2"></i>Avis</a></li>
+            <li><a href="ListeBoutiques.html" class="hover:underline flex items-center"><i class="bi bi-bag-check mr-2"></i>Boutique</a></li>
+            <li><a href="ListeNouveautés.html" class="hover:underline flex items-center"><i class="bi bi-stars mr-2"></i>Nouveautés</a></li>
+            <li><a  class="hover:underline flex items-center"><i class="bi bi-person-circle mr-2"></i>Profile</a></li>
+            <li><a href="FormulaireDétails.html" class="hover:underline flex items-center"><i class="bi bi-lightbulb mr-2"></i>Recommandations</a></li>
+
     
         </ul>
         
@@ -58,11 +57,25 @@
         </div>
         
         <!-- Bouton Déconnexion -->
-        <button class="bg-red-500 px-3 py-1 rounded text-sm">Déconnecter</button>
+<div style="margin-left: 20px;"> <!-- Ajoute un espacement de 20px à gauche -->
+    <button style="
+        border: 2px solid white;
+        padding: 10px 20px; /* Ajoute un padding de 10px en haut/bas et 20px à gauche/droite */
+        color: white;
+        background-color: transparent; /* Fond transparent */
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px; /* Coins arrondis */
+        transition: background-color 0.3s ease; /* Animation de transition */
+    ">
+        Déconnecter
+    </button>
+</div>
     </nav>
 
     <main class="container mx-auto px-4 py-8">
-        <a href="#" class="text-lg font-bold">&larr; Entrer Les Détails</a>
+        <a href="HomePage.html" class="text-lg font-bold">&larr; </a>
+        
 
         <!-- Formulaire -->
         <div class="card mt-6">
@@ -109,22 +122,22 @@
         <h2 class="text-xl font-bold text-red-600 mt-8">Recommandations</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <img src="vestebleu.jpg" alt="Veste Bleu Sport" class="w-full h-40 object-cover rounded">
+                <img src="2010245b-b61d-4e14-9272-0f094568af60.jpeg" alt="Veste Bleu Sport" class="w-full h-40 object-cover rounded">
                 <h3 class="text-center font-bold mt-2">Veste Bleu Sport</h3>
                 <p class="text-center text-gray-600">120 DT</p>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <img src="vestebleu.jpg" alt="Chemise Blanche" class="w-full h-40 object-cover rounded">
+                <img src="0494b3b6-bc5d-410b-87a3-b32d8e5688b9.jpeg" alt="Chemise Blanche" class="w-full h-40 object-cover rounded">
                 <h3 class="text-center font-bold mt-2">Chemise Blanche</h3>
                 <p class="text-center text-gray-600">60 DT</p>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <img src="vestebleu.jpg" alt="Pantalon Noir" class="w-full h-40 object-cover rounded">
+                <img src="4a2c8284-5203-4d41-82fe-d56963bb1260.jpeg" alt="Pantalon Noir" class="w-full h-40 object-cover rounded">
                 <h3 class="text-center font-bold mt-2">Pantalon Noir</h3>
                 <p class="text-center text-gray-600">90 DT</p>
             </div>
             <div class="bg-white p-4 rounded-lg shadow-md">
-                <img src="vestebleu.jpg" alt="Blazer Noir" class="w-full h-40 object-cover rounded">
+                <img src="6f299dca-587c-4e90-9d25-1bf03e51819a.jpeg" alt="Blazer Noir" class="w-full h-40 object-cover rounded">
                 <h3 class="text-center font-bold mt-2">Blazer Noir</h3>
                 <p class="text-center text-gray-600">150 DT</p>
             </div>

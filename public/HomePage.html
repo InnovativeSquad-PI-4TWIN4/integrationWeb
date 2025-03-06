@@ -46,12 +46,13 @@
         <!-- Menu pour desktop -->
         <ul class="hidden md:flex space-x-6 items-center flex-grow justify-center">
             <li><a href="HomePage.html" class="hover:underline flex items-center"><i class="bi bi-house-door mr-2"></i>Accueil</a></li>
-            <li><a href="AvisSite.html" class="hover:underline flex items-center"><i class="bi bi-cart mr-2"></i>Avis</a></li>
-            <li><a href="Authenticitéproduit.html" class="hover:underline flex items-center"><i class="bi bi-tags mr-2"></i>Boutique</a></li>
-            <li><a href="ListeNouveautés.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Nouveautés</a></li>
-            <li><a href="AvisProduit.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Profile</a></li>
-            <li><a href="ListeBoutiques.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Localisation</a></li>
-            <li><a href="FormulaireDétails.html" class="hover:underline flex items-center"><i class="bi bi-star mr-2"></i>Recommandations</a></li>
+            <li><a href="AvisSite.html" class="hover:underline flex items-center"><i class="bi bi-chat-left-text mr-2"></i>Avis</a></li>
+            <li><a href="ListeBoutiques.html" class="hover:underline flex items-center"><i class="bi bi-bag-check mr-2"></i>Boutique</a></li>
+            <li><a href="ListeNouveautés.html" class="hover:underline flex items-center"><i class="bi bi-stars mr-2"></i>Nouveautés</a></li>
+            <li><a  class="hover:underline flex items-center"><i class="bi bi-person-circle mr-2"></i>Profile</a></li>
+            <li><a href="FormulaireDétails.html" class="hover:underline flex items-center"><i class="bi bi-lightbulb mr-2"></i>Recommandations</a></li>
+            
+            
     
     
         </ul>
@@ -63,15 +64,28 @@
         </div>
         
         <!-- Bouton Déconnexion -->
-        <button class="bg-red-500 px-3 py-1 rounded text-sm">Déconnecter</button>
-    </nav>
+<div style="margin-left: 20px;"> <!-- Ajoute un espacement de 20px à gauche -->
+    <button style="
+        border: 2px solid white;
+        padding: 10px 20px; /* Ajoute un padding de 10px en haut/bas et 20px à gauche/droite */
+        color: white;
+        background-color: transparent; /* Fond transparent */
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px; /* Coins arrondis */
+        transition: background-color 0.3s ease; /* Animation de transition */
+    ">
+        Déconnecter
+    </button>
+</div>
+           </nav>
 
     <main class="container mx-auto px-4 py-8 text-center">
         <h1 class="text-2xl font-bold bg-white p-4 inline-block rounded border shadow">Le vide-dressing des hommes stylés</h1>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-6">
             <div class="bg-blue-100 p-6 rounded-lg shadow-md flex flex-col items-center">
                 <div class="w-full h-60 flex justify-center items-center overflow-hidden rounded">
-                    <img src="vestebleu.jpg" alt="Vêtements" class="w-auto h-full object-contain">
+                    <img src="0494b3b6-bc5d-410b-87a3-b32d8e5688b9.jpeg" alt="Vêtements" class="w-auto h-full object-contain">
                 </div>
                 <button class="discover-button mt-4 w-full text-center py-2 bg-blue-900 text-white rounded-lg shadow-md"
                     onclick="window.location.href='DetailsArticle.html';">
@@ -81,20 +95,20 @@
             
             <div class="bg-blue-100 p-6 rounded-lg shadow-md flex flex-col items-center">
                 <div class="w-full h-60 flex justify-center items-center overflow-hidden rounded">
-                    <img src="vestebleu.jpg" alt="Vêtements" class="w-auto h-full object-contain">
+                    <img src="5d5c4ae2-08fd-409a-99fe-88bd2c9457a9.jpeg" alt="Vêtements" class="w-auto h-full object-contain">
                 </div>
                 <button class="discover-button mt-4 w-full text-center py-2 bg-blue-900 text-white rounded-lg shadow-md"
-                    onclick="window.location.href='DetailsArticle.html';">
+                    onclick="window.location.href='Authenticitéproduit.html';">
                     Découvrir 👁️
                 </button>
             </div>
             
             <div class="bg-blue-100 p-6 rounded-lg shadow-md flex flex-col items-center">
                 <div class="w-full h-60 flex justify-center items-center overflow-hidden rounded">
-                    <img src="vestebleu.jpg" alt="Vêtements" class="w-auto h-full object-contain">
+                    <img src="2d47d73c-5067-4777-84ed-017bfb396ef3.jpeg" alt="Vêtements" class="w-auto h-full object-contain">
                 </div>
                 <button class="discover-button mt-4 w-full text-center py-2 bg-blue-900 text-white rounded-lg shadow-md"
-                    onclick="window.location.href='DetailsArticle.html';">
+                    onclick="window.location.href='AvisProduit.html';">
                     Découvrir 👁️
                 </button>
             </div>
